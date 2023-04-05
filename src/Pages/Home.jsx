@@ -1,6 +1,6 @@
 import React from "react";
-import { FaReact, FaJs, FaPython } from "react-icons/fa";
-import { DiRuby } from "react-icons/di";
+import { FaReact, FaJs, FaPython, FaNode } from "react-icons/fa";
+import { DiRuby, DiGit } from "react-icons/di";
 import { SiRubyonrails } from "react-icons/si";
 
 export default function Home() {
@@ -19,17 +19,18 @@ export default function Home() {
       </div>
       <section className="home-page-right">
         <h2>My Skills</h2>
-      <div className="skills">
-        <FaReact size={56} />
-        <FaJs size={56} />
-        <DiRuby size={56} />
-        <SiRubyonrails size={56} />
-      </div>
+        <div className="skills">
+          <FaReact size={56} />
+          <FaJs size={56} />
+          <DiRuby size={56} />
+          <SiRubyonrails size={60} />
+          <DiGit size={56} />
+        </div>
 
-      <div className="learning">
-        <h2>Currently learning</h2>
-        {/* <FaPython size={56} /> */}
-      </div>
+          <h2>Currently learning</h2>
+        <div className="learning">
+          <FaNode size={56} />
+        </div>
       </section>
     </div>
   );
