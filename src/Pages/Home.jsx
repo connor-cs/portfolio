@@ -2,6 +2,7 @@ import React from "react";
 import { FaReact, FaJs, FaPython, FaNode } from "react-icons/fa";
 import { DiRuby, DiGit } from "react-icons/di";
 import { SiRubyonrails } from "react-icons/si";
+import ResModal from "../Components/Modal";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <div className="learning">
           <FaNode size={56} />
         </div>
+        <ResModal />
       </section>
     </div>
   );

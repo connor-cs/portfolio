@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+/src/doc/resume.pdf
+src/doc/resume.pdf
+
 # testing
 /coverage
 

@@ -90,6 +90,15 @@ body {
   padding: 10px;
 }
 
+.footer-icon {
+  text-decoration: none;
+  color:#EAE2B7;
+}
+
+.modal {
+  /* display: inline-block */
+}
+
 .nav {
   display: flex;
   padding: 20px;
@@ -120,7 +129,7 @@ body {
 }
 
 .intro {
-  width: 66%;
+  width: 56%;
   border: 2px solid black;
   border-radius: 10px;
   margin-left: 10px;
