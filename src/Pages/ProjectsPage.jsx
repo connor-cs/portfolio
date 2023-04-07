@@ -1,5 +1,8 @@
 import React from "react";
 import Project from "../Components/Project";
+import { projectData } from "../Components/ProjectData";
+
+console.log(projectData.fullStackTravel)
 
 export default function Projects() {
   return (
