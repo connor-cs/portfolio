@@ -1,34 +1,60 @@
-
 export const projectData = {
-    notesAppData: {
-        title: 'notes/to do app',
-        desc: [],
-        tech: ['React', 'JavaScript', 'CSS'],
-        code: 'https://github.com/connor-cs/notes-app',
-        link: 'https://stupendous-wisp-2c15bd.netlify.app/'
+  notesAppData: {
+    title: "notes/to do app",
+    desc: '',
+    tech: ["React", "JavaScript", "CSS"],
+    code: "https://github.com/connor-cs/notes-app",
+    link: "https://stupendous-wisp-2c15bd.netlify.app/",
+    images: {
+      first: "src/doc/images/notes/1.PNG",
+      second: "src/doc/images/travel-marker/0.PNG",
+      third: "src/doc/images/travel-marker/2.PNG",
     },
-    fullStackTravel: {
-        title: 'Full stack travel map',
-        desc: [],
-        tech: ['Ruby', 'Ruby on Rails', 'JavaScript', 'React', 'MapBox', 'CSS', 'PostgreSQL'],
-        code: "https://github.com/connor-cs/fullstack-travel-marker-app",
-        demo: ""
+  },
+  fullStackTravel: {
+    title: "Full stack travel map",
+    desc: '',
+    tech: [
+      "Ruby",
+      "Ruby on Rails",
+      "JavaScript",
+      "React",
+      "MapBox",
+      "CSS",
+      "PostgreSQL",
+    ],
+    code: "https://github.com/connor-cs/fullstack-travel-marker-app",
+    demo: "",
+    images: {
+      first: "src/doc/images/travel-marker/0.PNG",
+      second: "src/doc/images/travel-marker/1.PNG",
+      third: "src/doc/images/travel-marker/2.PNG",
     },
-    travelAdvisor: {
-        title: 'Travel advisor app',
-        desc: [],
-        tech: ['GoogleMaps', 'MaterialUI', 'JavaScript', 'React', 'CSS'],
-        code: 'https://github.com/connor-cs/TravAd',
-        demo: '',
-        link: ''
+  },
+  travelAdvisor: {
+    title: "Travel advisor app",
+    desc: '',
+    tech: ["GoogleMaps", "MaterialUI", "JavaScript", "React", "CSS"],
+    code: "https://github.com/connor-cs/TravAd",
+    demo: "",
+    link: "",
+    images: {
+      first: "",
+      second: "",
+      third: "",
     },
-    movieHub: {
-        title: 'Movie Hub',
-        desc: [],
-        tech: ['Firebase', 'Firestore', 'React', 'JavaScript', 'MaterialUI', 'CSS'],
-        code: 'https://github.com/connor-cs/movie-app',
-        demo: '',
-        link: 'https://merry-cascaron-9f8859.netlify.app/'
-    }
-
-}
+  },
+  movieHub: {
+    title: "Movie Hub",
+    desc: '',
+    tech: ["Firebase", "Firestore", "React", "JavaScript", "MaterialUI", "CSS"],
+    code: "https://github.com/connor-cs/movie-app",
+    demo: "",
+    link: "https://merry-cascaron-9f8859.netlify.app/",
+    images: {
+      first: "src/doc/images/movie/0.PNG",
+      second: "src/doc/images/movie/1.PNG",
+      third: "src/doc/images/movie/2.PNG",
+    },
+  },
+};
