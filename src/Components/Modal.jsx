@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
+
 export default function ResModal() {
   const [modal, setModal] = useState(false);
 
@@ -13,6 +14,7 @@ export default function ResModal() {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
+
     transform: "translate(-50%, -50%)",
   };
 
@@ -28,7 +30,7 @@ export default function ResModal() {
           title="resume"
           width="90%"
           height="90%"
-          src="src/doc/resume.pdf"
+          src="/src/doc/resume.pdf"
         />
       </Modal>
     </div>
