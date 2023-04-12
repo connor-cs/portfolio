@@ -30,7 +30,7 @@ export default function ResModal() {
           title="resume"
           width="90%"
           height="90%"
-          src="/src/doc/resume.pdf"
+          src="https://pdfhost.io/v/irxap50ue_connor_cyphers_resume_pdf"
         />
       </Modal>
     </div>
