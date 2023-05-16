@@ -3,19 +3,20 @@ import { FaReact, FaJs, FaPython, FaNode } from "react-icons/fa";
 import { DiRuby, DiGit } from "react-icons/di";
 import { SiRubyonrails } from "react-icons/si";
 import ResModal from "../Components/Modal";
+import {FiSquare} from 'react-icons/fi'
 
 export default function Home() {
   return (
     <div className="home">
       <div className="intro">
-        <h3>Lorem ipsum</h3>
+        <h2>Lorem ipsum</h2>
         <h3>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
           quos dolor eveniet, voluptatem delectus molestiae itaque fugiat
           architecto. Soluta similique provident vel vitae est debitis nam eaque
           fugiat eius, expedita nihil deleniti eligendi nesciunt accusamus
           voluptate quibusdam, dolorum exercitationem fuga aperiam veniam
-          architecto nulla? Labore adipisci saepe autem quo minima.
+          archite
         </h3>
       </div>
       <section className="home-page-right">
@@ -30,7 +31,7 @@ export default function Home() {
 
           <h2>Currently learning</h2>
         <div className="learning">
-          <FaNode size={56} />
+          <FiSquare size={56} />
         </div>
         <ResModal />
       </section>
