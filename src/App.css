@@ -9,6 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  
 
 }
 
@@ -118,8 +119,10 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  background-image: linear-gradient(#003049, #004367);
+  /* background-image: linear-gradient(#003049, #004367); */
   /* background-color: #003049; */
+  /* background-image: url('./src/images/bg-recolor.jpg'); */
+  background-size: contain;
   justify-content: center;
   width: 100vw;
   height: 100vh;

@@ -4,10 +4,11 @@ import { DiRuby, DiGit } from "react-icons/di";
 import { SiRubyonrails } from "react-icons/si";
 import ResModal from "../Components/Modal";
 import {FiSquare} from 'react-icons/fi'
+import image from '../images/bg-recolor.jpg'
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home" style={{backgroundImage:`url(${image})`}}>
       <div className="intro">
         <h2>Lorem ipsum</h2>
         <h3>
