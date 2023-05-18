@@ -6,9 +6,10 @@ import ResModal from "../Components/Modal";
 import {FiSquare} from 'react-icons/fi'
 import image from '../images/bg-recolor.jpg'
 
+// style={{backgroundImage:`url(${image})`}}
 export default function Home() {
   return (
-    <div className="home" style={{backgroundImage:`url(${image})`}}>
+    <div className="home" style={{backgroundImage:`url(${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
       <div className="intro">
         <h2>Lorem ipsum</h2>
         <h3>

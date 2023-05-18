@@ -4,6 +4,11 @@ FCBF49
 D62828
 EAE2B7
 
+more possible colors:
+#1b0f20
+#070207
+#201125
+
 
 //get pictures of projects
 
