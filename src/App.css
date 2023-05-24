@@ -10,7 +10,7 @@ body {
   align-items: center;
   /* height: 100vh;
   width: 100vw; */
-  
+
 
 }
 
@@ -53,11 +53,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #003049;
-   width: 100vw;
+  width: 100vw;
   height: 100vh;
 }
 
-.contact-container > nav {
+.contact-container>nav {
   align-self: flex-start;
 }
 
@@ -90,7 +90,7 @@ body {
   border: none;
   border-radius: 10px;
   margin-top: 10px;
-  color:#EAE2B7;
+  color: #EAE2B7;
   display: flex;
   justify-content: center;
   padding: 2px;
@@ -99,12 +99,21 @@ body {
 .footer-icon {
   padding-top: 10px;
   text-decoration: none;
-  color:#EAE2B7;
+  color: #EAE2B7;
 }
 
 /* .modal {
 
 } */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+}
 
 .nav {
   display: flex;
@@ -112,22 +121,14 @@ body {
   justify-content: space-around;
   color: white;
   text-decoration: none;
-  /* margin-bottom: 6px; */
 }
 
 
 
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-image: linear-gradient(#003049, #004367); */
-  /* background-color: #003049; */
-  /* background-image: url('bg-recolor.jpg'); */
-  background-size: contain;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  background-image: url('/public/bg-recolor.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .icon {
@@ -174,16 +175,40 @@ body {
 
 .link {
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 2em;
   color: #EAE2B7;
   border-radius: 10px;
-  /* border: 2px solid black; */
   height: 100%;
+  background-image: linear-gradient(to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #EAE2B7 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
 }
 
 .link:hover {
-  
+  background-position: 0;
 }
+
+.link:hover::before {
+  width: 100%;
+}
+
 
 .carousel {
   background-size: contain;
@@ -199,7 +224,7 @@ body {
   /* height: 100vh; */
   background-image: url('/public/project-bg.jpg');
   background-size: cover;
-  
+
 }
 
 .proj {

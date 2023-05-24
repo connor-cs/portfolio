@@ -6,31 +6,13 @@ import { DiRuby, DiGit } from "react-icons/di";
 import { SiRubyonrails } from "react-icons/si";
 import ResModal from "../Components/Modal";
 import { FiSquare } from "react-icons/fi";
-import image from "../images/bg-recolor.jpg";
 
-// style={{backgroundImage:`url(${image})`}}
+
 export default function Home() {
   return (
-    <div
-      className="home"
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      {/* <div className="nav">
-        <NavLink className="link" to="/">
-          Home
-        </NavLink>
-        <NavLink className="link" to="/projects">
-          Projects
-        </NavLink>
-        <NavLink className="link" to="/contact">
-          Contact
-        </NavLink>
-      </div> */}
+    <div className="home">
       <Nav />
+      <div className="main">
       <div className="intro">
         <h2>Lorem ipsum</h2>
         <h3>
@@ -58,6 +40,7 @@ export default function Home() {
         </div>
         <ResModal />
       </section>
+    </div>
     </div>
   );
 }
