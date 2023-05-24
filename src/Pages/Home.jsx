@@ -1,15 +1,36 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Nav from "../Components/Nav";
 import { FaReact, FaJs, FaPython, FaNode } from "react-icons/fa";
 import { DiRuby, DiGit } from "react-icons/di";
 import { SiRubyonrails } from "react-icons/si";
 import ResModal from "../Components/Modal";
-import {FiSquare} from 'react-icons/fi'
-import image from '../images/bg-recolor.jpg'
+import { FiSquare } from "react-icons/fi";
+import image from "../images/bg-recolor.jpg";
 
 // style={{backgroundImage:`url(${image})`}}
 export default function Home() {
   return (
-    <div className="home" style={{backgroundImage:`url(${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+    <div
+      className="home"
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* <div className="nav">
+        <NavLink className="link" to="/">
+          Home
+        </NavLink>
+        <NavLink className="link" to="/projects">
+          Projects
+        </NavLink>
+        <NavLink className="link" to="/contact">
+          Contact
+        </NavLink>
+      </div> */}
+      <Nav />
       <div className="intro">
         <h2>Lorem ipsum</h2>
         <h3>
@@ -31,7 +52,7 @@ export default function Home() {
           <DiGit size={56} />
         </div>
 
-          <h2>Currently learning</h2>
+        <h2>Currently learning</h2>
         <div className="learning">
           <FiSquare size={56} />
         </div>

@@ -49,12 +49,16 @@ body {
 
 .contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  border-radius: 7px;
   align-items: center;
   background-color: #003049;
-  /* width: 100vw;
-  height: 100vh; */
+   width: 100vw;
+  height: 100vh;
+}
+
+.contact-container > nav {
+  align-self: flex-start;
 }
 
 .contact>form {
@@ -106,7 +110,6 @@ body {
   display: flex;
   padding: 10px;
   justify-content: space-around;
-  background-color: #201125;
   color: white;
   text-decoration: none;
   /* margin-bottom: 6px; */
@@ -118,7 +121,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
   /* background-image: linear-gradient(#003049, #004367); */
   /* background-color: #003049; */
   /* background-image: url('bg-recolor.jpg'); */
@@ -180,7 +182,7 @@ body {
 }
 
 .link:hover {
-  background-color: #9A1C1C;
+  
 }
 
 .carousel {
@@ -191,9 +193,19 @@ body {
 
 .projects {
   display: flex;
+  color: #EAE2B7;
   flex-direction: column;
   border: 5px solid blue;
   /* height: 100vh; */
+  background-image: url('/public/project-bg.jpg');
+  background-size: cover;
+  
+}
+
+.proj {
+  border: 2px solid green;
+  color: #EAE2B7;
+  /* background-color: #F77F00; */
 }
 
 
@@ -209,6 +221,7 @@ body {
   /* height: 100%; */
   display: grid;
   border: 3px solid red;
+  gap: 10px 10px;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
 }
 
