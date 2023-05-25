@@ -1,11 +1,11 @@
 import React from "react";
 import Project from "../Components/Project";
 import { projectData } from "../Components/ProjectData";
-import image from '../images/project-bg.jpg'
+import Footer from "../Components/Footer";
 import Nav from "../Components/Nav";
 
 console.log(projectData.fullStackTravel)
-//style={{backgroundImage: `url(${image})`, }}
+
 export default function Projects() {
   return (
     <div className="projects" >
@@ -18,8 +18,8 @@ export default function Projects() {
         <Project />
         <Project />
         <Project />
-        <Project />
       </div>
+      <Footer />
     </div>
   );
 }

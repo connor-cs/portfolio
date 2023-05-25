@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Footer from "../Components/Footer";
 import Nav from "../Components/Nav";
 import { FaReact, FaJs, FaPython, FaNode } from "react-icons/fa";
 import { DiRuby, DiGit } from "react-icons/di";
@@ -41,6 +41,7 @@ export default function Home() {
         <ResModal />
       </section>
     </div>
+    <Footer />
     </div>
   );
 }

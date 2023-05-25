@@ -44,21 +44,30 @@ body {
   flex-direction: column;
   border: none;
   border-radius: 20px;
+  border: 2px solid yellow;
   width: 200px;
 }
 
-.contact-container {
+.contact-page {
+  width: 100vw;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
+  background-image: url('/public/contact-bg.jpg');
+}
+
+.contact-page > main {
   display: flex;
+  align-self: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #003049;
-  width: 100vw;
-  height: 100vh;
+  border: 2px solid green
 }
 
-.contact-container>nav {
-  align-self: flex-start;
+.contact-page>nav {
+  /* align-self: flex-start;
+  justify-self: flex-start; */
 }
 
 .contact>form {
@@ -66,6 +75,7 @@ body {
   flex-direction: column;
   padding: 20px;
   background-color: #F77F00;
+  border: 2px solid blue;
 }
 
 .contact>input {
@@ -75,7 +85,7 @@ body {
 .contact>h2 {
   padding: 20px;
   margin: 0;
-  background-color: #F77F00;
+  
 }
 
 .contact textarea {
@@ -86,9 +96,7 @@ body {
 
 .footer {
   height: 74px;
-  background-color: #D62828;
   border: none;
-  border-radius: 10px;
   margin-top: 10px;
   color: #EAE2B7;
   display: flex;
