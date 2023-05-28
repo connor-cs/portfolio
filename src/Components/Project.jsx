@@ -37,7 +37,7 @@ export default function Project({ props }) {
           />
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              jhkdjaslfkjet consectetur adipisicing elit.
               Doloremque exercitationem nobis, corrupti consequuntur, voluptates
               aliquam cum saepe nam laboriosam, minus architecto dolorem
               deleniti. Ullam asperiores voluptatum optio, saepe harum culpa a
@@ -54,8 +54,7 @@ export default function Project({ props }) {
           />
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque exercitationem nobis, corrupti consequuntur, voluptates
+              Laaaaaaaaaaaaaaaaaaaaacitationem nobis, corrupti consequuntur, voluptates
               aliquam cum saepe nam laboriosam, minus architecto dolorem
               deleniti. Ullam asperiores voluptatum optio, saepe harum culpa a
               repudiandae minus. Commodi aliquid neque nobis. Minima, quisquam
