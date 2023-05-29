@@ -17,16 +17,12 @@ export default function Project({ props }) {
     <div className="proj">
       <Carousel>
         <div className="carousel">
+          <h2>{props.title}</h2>
           <img
             className="proj-image"
             src={props.images.first}
             alt="first"
           />
-          <div>
-            <ul className="proj-desc">
-              {props.desc.map(text=><li>{text}</li>)}
-            </ul>
-          </div>
         </div>
         <div>
           <img
@@ -34,11 +30,6 @@ export default function Project({ props }) {
             alt="second"
             src={props.images.second}
           />
-          <div>
-          <ul className="proj-desc">
-              {props.desc.map(text=><li>{text}</li>)}
-            </ul>
-          </div>
         </div>
         <div>
           <img
@@ -46,6 +37,8 @@ export default function Project({ props }) {
             alt="third"
             src={props.images.third}
           />
+        </div>
+      </Carousel>
           <div>
           <ul className="proj-desc">
               {props.desc.map(text=><li>{text}</li>)}
@@ -54,9 +47,6 @@ export default function Project({ props }) {
               {props.tech.map(tech=><Chip tech={tech} />)}
               </div>
           </div>
-        
-        </div>
-      </Carousel>
         <div className="links-section">
           View the code:  <BsGithub className="carousel-icon" size={25} onClick={()=>window.open(`${props.code}`)}/>
           {props.link ? <p>View it <a href={props.link}>here</a></p> : null}

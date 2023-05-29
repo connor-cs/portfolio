@@ -7,8 +7,8 @@ export const projectData = {
     link: "https://stupendous-wisp-2c15bd.netlify.app/",
     images: {
       first: "project-images/notes/0.PNG",
-      second: "project-images/1.PNG",
-      third: "project-images/2.PNG",
+      second: "project-images/notes/1.PNG",
+      third: "project-images/notes/2.PNG",
     },
   },
   fullStackTravel: {
