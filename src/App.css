@@ -39,6 +39,19 @@ body {
   background-color: #9A1C1C;
 }
 
+.carousel-icon {
+  cursor: pointer;
+}
+
+.chip {
+  font-size: 0.75em;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: hsl(208, 100%, 97%, 0.5);
+  margin: 5px;
+  padding: 0px 2px 0px 2px;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -56,7 +69,7 @@ body {
   background-image: url('/public/contact-bg.jpg');
 }
 
-.contact-page > main {
+.contact-page>main {
   display: flex;
   align-self: center;
   flex-direction: column;
@@ -85,7 +98,7 @@ body {
 .contact>h2 {
   padding: 20px;
   margin: 0;
-  
+
 }
 
 .contact textarea {
@@ -241,13 +254,24 @@ body {
   /* background-color: #F77F00; */
 }
 
+.proj-desc {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.proj>div>a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
 
 .proj-image {
   /* max-width: 100%; 
   height: 100px; */
   object-fit: contain;
-  max-width: 200px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .proj-container {
@@ -265,4 +289,10 @@ body {
   padding: 20px;
   display: flex;
   justify-content: space-around;
+}
+
+.tech-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

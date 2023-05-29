@@ -1,6 +1,8 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import Chip from "./Chip";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {BsGithub} from "react-icons/bs"
 
 //proj image1, 2, and 3
 //link if available
@@ -8,61 +10,58 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 //description
 //link to code
 //link to demo
+
 export default function Project({ props }) {
+  console.log(props)
   return (
     <div className="proj">
       <Carousel>
         <div className="carousel">
           <img
             className="proj-image"
-            src="https://plus.unsplash.com/premium_photo-1668774097940-f36dfdaee149?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80/"
+            src={props.images.first}
             alt="first"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque exercitationem nobis, corrupti consequuntur, voluptates
-              aliquam cum saepe nam laboriosam, minus architecto dolorem
-              deleniti. Ullam asperiores voluptatum optio, saepe harum culpa a
-              repudiandae minus. Commodi aliquid neque nobis. Minima, quisquam
-              quo?
-            </p>
+            <ul className="proj-desc">
+              {props.desc.map(text=><li>{text}</li>)}
+            </ul>
           </div>
         </div>
         <div>
           <img
             className="proj-image"
             alt="second"
-            src="https://plus.unsplash.com/premium_photo-1668774097831-2e52807f7e1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=784&q=80"
+            src={props.images.second}
           />
           <div>
-            <p>
-              jhkdjaslfkjet consectetur adipisicing elit.
-              Doloremque exercitationem nobis, corrupti consequuntur, voluptates
-              aliquam cum saepe nam laboriosam, minus architecto dolorem
-              deleniti. Ullam asperiores voluptatum optio, saepe harum culpa a
-              repudiandae minus. Commodi aliquid neque nobis. Minima, quisquam
-              quo?
-            </p>
+          <ul className="proj-desc">
+              {props.desc.map(text=><li>{text}</li>)}
+            </ul>
           </div>
         </div>
         <div>
           <img
             className="proj-image"
             alt="third"
-            src="https://plus.unsplash.com/premium_photo-1668774098006-4cd118fef8df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+            src={props.images.third}
           />
           <div>
-            <p>
-              Laaaaaaaaaaaaaaaaaaaaacitationem nobis, corrupti consequuntur, voluptates
-              aliquam cum saepe nam laboriosam, minus architecto dolorem
-              deleniti. Ullam asperiores voluptatum optio, saepe harum culpa a
-              repudiandae minus. Commodi aliquid neque nobis. Minima, quisquam
-              quo?
-            </p>
+          <ul className="proj-desc">
+              {props.desc.map(text=><li>{text}</li>)}
+            </ul>
+            <div className="tech-container">
+              {props.tech.map(tech=><Chip tech={tech} />)}
+              </div>
           </div>
+        
         </div>
       </Carousel>
+        <div className="links-section">
+          View the code:  <BsGithub className="carousel-icon" size={25} onClick={()=>window.open(`${props.code}`)}/>
+          {props.link ? <p>View it <a href={props.link}>here</a></p> : null}
+          {props.demo ? <p>View <a href={props.demo}>demo</a></p> : null}
+        </div>
     </div>
   );
 }
