@@ -65,4 +65,30 @@ export const projectData = {
       third: "project-images/movie/2.PNG",
     },
   },
+  countries: {
+    title: "Countries Takehome Test",
+    desc: ["Integrate with the REST Countries API to pull country data", "Display data according to the design schema provided"],
+    tech: ["React", "JavaScript"],
+    code: "https://github.com/connor-cs/countries",
+    demo: "",
+    link: "https://master--flourishing-sawine-fa8914.netlify.app/",
+    images: {
+      first: "project-images/countries/0.PNG",
+      second: "project-images/countries/1.PNG",
+      third: "project-images/countries/2.PNG"
+    }
+  },
+  gitBranches: {
+    title: "Git Branches Takehome Test",
+    desc: ["kdlsks"],
+    tech: ["React", "JavaScript"],
+    code: "https://github.com/connor-cs/branches-takehome-test",
+    demo: "",
+    link: "",
+    images: {
+      first: "",
+      second: "",
+      third: ""
+    }
+  }
 };
