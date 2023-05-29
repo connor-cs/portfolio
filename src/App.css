@@ -39,6 +39,26 @@ body {
   background-color: #9A1C1C;
 }
 
+.carousel-icon {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.chip {
+  font-size: 0.75em;
+  font-weight: bold;
+  color: rgb(12, 12, 12);
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: hsl(208, 100%, 97%, 0.5);
+  margin: 5px;
+  padding: 0px 2px 0px 2px;
+}
+
+.chip:hover {
+  background-color: hsl(208, 100%, 97%, 0.75);
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -56,7 +76,7 @@ body {
   background-image: url('/public/contact-bg.jpg');
 }
 
-.contact-page > main {
+.contact-page>main {
   display: flex;
   align-self: center;
   flex-direction: column;
@@ -85,7 +105,7 @@ body {
 .contact>h2 {
   padding: 20px;
   margin: 0;
-  
+
 }
 
 .contact textarea {
@@ -217,6 +237,10 @@ body {
   width: 100%;
 }
 
+.links-section {
+  padding: 5px;
+}
+
 
 .carousel {
   background-size: contain;
@@ -228,8 +252,6 @@ body {
   display: flex;
   color: #EAE2B7;
   flex-direction: column;
-  border: 5px solid blue;
-  /* height: 100vh; */
   background-image: url('/public/project-bg.jpg');
   background-size: cover;
 
@@ -241,19 +263,26 @@ body {
   /* background-color: #F77F00; */
 }
 
+.proj-desc {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.proj>div>a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
 
 .proj-image {
-  /* max-width: 100%; 
-  height: 100px; */
   object-fit: contain;
-  max-width: 200px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .proj-container {
-  /* height: 100%; */
   display: grid;
-  border: 3px solid red;
   gap: 10px 10px;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
 }
@@ -265,4 +294,11 @@ body {
   padding: 20px;
   display: flex;
   justify-content: space-around;
+}
+
+.tech-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
 }

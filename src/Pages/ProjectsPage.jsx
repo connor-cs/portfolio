@@ -12,12 +12,12 @@ export default function Projects() {
       <Nav />
       <h1>My Projects</h1>
       <div className="proj-container">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project props={projectData.fullStackTravel}/>
+        <Project props={projectData.travelAdvisor}/>
+        <Project props={projectData.movieHub}/>
+        <Project props={projectData.notesAppData}/>
+        {/* <Project />
+        <Project /> */}
       </div>
       <Footer />
     </div>
