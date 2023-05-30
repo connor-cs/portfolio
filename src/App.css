@@ -85,7 +85,7 @@ body {
   border: 2px solid green
 }
 
-.contact-page>nav {
+.contact-page > nav {
   /* align-self: flex-start;
   justify-self: flex-start; */
 }
@@ -170,8 +170,6 @@ body {
   justify-content: center;
   width: 56%;
   height: 30%;
-  border: 2px solid black;
-  border-radius: 10px;
   margin-left: 10px;
   margin-top: 20px;
   color: #EAE2B7;
@@ -244,7 +242,6 @@ body {
 
 .carousel {
   background-size: contain;
-  /* height: 30%; */
 }
 
 
@@ -258,9 +255,9 @@ body {
 }
 
 .proj {
-  border: 2px solid green;
+  border: 2px solid grey;
+  border-radius: 5px;
   color: #EAE2B7;
-  /* background-color: #F77F00; */
 }
 
 .proj-desc {

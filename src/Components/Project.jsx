@@ -15,9 +15,9 @@ export default function Project({ props }) {
   console.log(props)
   return (
     <div className="proj">
+          <h2>{props.title}</h2>
       <Carousel>
         <div className="carousel">
-          <h2>{props.title}</h2>
           <img
             className="proj-image"
             src={props.images.first}
