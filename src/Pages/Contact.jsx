@@ -20,6 +20,7 @@ export default function Contact() {
         <form onSubmit={(e) => handleSubmit(e)}>
           <label htmlFor="name">Name</label>
           <input
+          placeholder="Enter your name"
             type="text"
             name="name"
             id="name"
@@ -28,6 +29,7 @@ export default function Contact() {
           ></input>
           <label htmlFor="email">Email</label>
           <input
+          placeholder="Enter your email"
             type="email"
             name="email"
             id="email"
@@ -36,6 +38,7 @@ export default function Contact() {
           ></input>
           <label htmlFor="message" id="message"></label>
           <textarea
+          placeholder="Your message here.."
             name="message"
             value={formData.message}
             onChange={handleChange}

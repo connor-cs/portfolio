@@ -65,7 +65,7 @@ body {
   border: none;
   border-radius: 20px;
   border: 2px solid yellow;
-  width: 200px;
+  width: 35%;
 }
 
 .contact-page {
@@ -98,14 +98,20 @@ body {
   border: 2px solid blue;
 }
 
-.contact>input {
+.contact>form>input {
   border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+form > label {
+  padding: 5px;
 }
 
 .contact>h2 {
   padding: 20px;
   margin: 0;
-
+  
 }
 
 .contact textarea {
