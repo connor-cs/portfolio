@@ -1,7 +1,10 @@
 export const projectData = {
   notesAppData: {
     title: "notes/to do app",
-    desc: ["lorem40test test test test test test test", "test test test test test test st test test test test test test testst test test test test test test testst test test test test test test test"],
+    desc: [
+      "lorem40test test test test test test test",
+      "test test test test test test st test test test test test test testst test test test test test test testst test test test test test test test",
+    ],
     tech: ["React", "JavaScript", "CSS"],
     code: "https://github.com/connor-cs/notes-app",
     link: "https://stupendous-wisp-2c15bd.netlify.app/",
@@ -38,7 +41,9 @@ export const projectData = {
   },
   travelAdvisor: {
     title: "Travel advisor app",
-    desc: ["st test test test test test test testst test test test test test test testst test test test test test test test"],
+    desc: [
+      "st test test test test test test testst test test test test test test testst test test test test test test test",
+    ],
     tech: ["GoogleMaps", "MaterialUI", "JavaScript", "React", "CSS"],
     code: "https://github.com/connor-cs/TravAd",
     demo: "",
@@ -54,7 +59,9 @@ export const projectData = {
   },
   movieHub: {
     title: "Movie Hub",
-    desc: ["st test test test test test test testst test test test test test test testst test test test test test test test"],
+    desc: [
+      "st test test test test test test testst test test test test test test testst test test test test test test test",
+    ],
     tech: ["Firebase", "Firestore", "React", "JavaScript", "MaterialUI", "CSS"],
     code: "https://github.com/connor-cs/movie-app",
     demo: "",
@@ -67,7 +74,10 @@ export const projectData = {
   },
   countries: {
     title: "Countries Takehome Test",
-    desc: ["Integrate with the REST Countries API to pull country data", "Display data according to the design schema provided"],
+    desc: [
+      "Integrate with the REST Countries API to pull country data",
+      "Display data according to the design schema provided",
+    ],
     tech: ["React", "JavaScript"],
     code: "https://github.com/connor-cs/countries",
     demo: "",
@@ -75,8 +85,8 @@ export const projectData = {
     images: {
       first: "project-images/countries/0.PNG",
       second: "project-images/countries/1.PNG",
-      third: "project-images/countries/2.PNG"
-    }
+      third: "project-images/countries/2.PNG",
+    },
   },
   gitBranches: {
     title: "Git Branches Takehome Test",
@@ -86,9 +96,9 @@ export const projectData = {
     demo: "",
     link: "",
     images: {
-      first: "",
-      second: "",
-      third: ""
-    }
-  }
+      first: "project-images/branches/0.PNG",
+      second: "project-images/branches/1.PNG",
+      third: "project-images/branches/2.PNG",
+    },
+  },
 };

@@ -4,7 +4,6 @@ import { projectData } from "../Components/ProjectData";
 import Footer from "../Components/Footer";
 import Nav from "../Components/Nav";
 
-console.log(projectData.fullStackTravel);
 
 export default function Projects() {
   return (

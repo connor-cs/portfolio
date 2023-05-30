@@ -170,8 +170,6 @@ body {
   justify-content: center;
   width: 56%;
   height: 30%;
-  border: 2px solid black;
-  border-radius: 10px;
   margin-left: 10px;
   margin-top: 20px;
   color: #EAE2B7;
@@ -257,7 +255,8 @@ body {
 }
 
 .proj {
-  border: 2px solid green;
+  border: 2px solid grey;
+  border-radius: 5px;
   color: #EAE2B7;
 }
 
