@@ -18,3 +18,6 @@ more possible colors:
 /text area
 /contact corners not rounded
 /scroll to section
+
+
+https://moonlit-kashata-b62df2.netlify.app/contact
