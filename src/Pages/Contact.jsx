@@ -9,6 +9,7 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [errors, setErrors] = useState(false)
 
   return (
     <div className="contact-page">
@@ -46,6 +47,7 @@ export default function Contact() {
           <button className="button" type="submit">
             Send
           </button>
+          {errors ? 'Something went wrong..' : null}
         </form>
       </div>
       </main>
@@ -55,8 +57,9 @@ export default function Contact() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setErrors(false)
     try {
-      const res = await fetch("https://formspree.io/f/xknaqeqb", {
+      const res = await fetch("https://cors-anywhere.herokuapp.com/https://formspree.io/f/xknaqeqb", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,6 +69,7 @@ export default function Contact() {
       if (res.ok) {
         console.log("success");
       } else {
+        setErrors(true)
         console.log("error", res);
       }
     } catch (error) {

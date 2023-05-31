@@ -95,8 +95,7 @@ body {
   flex-direction: column;
   padding: 20px;
   border-radius: 5px;
-  background-color: hsl(0, 0%, 96%, 0.2);
-  border: 2px solid blue;
+  background-color: hsla(0, 40%, 98%, 0.897);
 }
 
 .contact>form>input {
@@ -109,6 +108,7 @@ body {
 
 .contact>form>input:focus {
   outline: none;
+  border-bottom: 2px solid #54b3d6;
 }
 
 form > label {
@@ -119,12 +119,6 @@ form > label {
   padding: 20px;
   margin: 0;
   
-}
-
-.contact textarea {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
 }
 
 .footer {
@@ -141,6 +135,22 @@ form > label {
   padding-top: 10px;
   text-decoration: none;
   color: #EAE2B7;
+}
+
+form > textarea {
+  border: none;
+  outline: none;
+  overflow: auto;
+  resize: vertical;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+}
+
+form >textarea:focus {
+  outline: none;
+  border: none;
+  overflow: auto;
+  background-color: transparent;
 }
 
 /* .modal {
@@ -175,6 +185,7 @@ form > label {
 .icon {
   margin-left: 40px;
   padding-top: 6px;
+  color:  #54b3d6;
 }
 
 .intro {
