@@ -94,7 +94,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #F77F00;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 96%, 0.2);
   border: 2px solid blue;
 }
 
@@ -102,6 +103,12 @@ body {
   border-radius: 5px;
   padding: 10px;
   border: none;
+  background-color: transparent;
+  border-bottom: 2px solid hsla(0, 4%, 48%, 0.75);
+}
+
+.contact>form>input:focus {
+  outline: none;
 }
 
 form > label {
