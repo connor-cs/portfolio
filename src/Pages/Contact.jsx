@@ -5,22 +5,20 @@ import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
   const [state, handleSubmit] = useForm("xknaqeqb");
-  
 
   return (
     <div className="contact-page">
       <Nav />
       <main>
         <div className="contact">
-          <h2>Let's connect!</h2>
-
           <form onSubmit={(e) => handleSubmit(e)}>
+            <h2>Let's connect!</h2>
             <label htmlFor="name">Name</label>
             <input
               placeholder="Enter your name"
@@ -41,6 +39,7 @@ export default function Contact() {
             ></input>
             <label htmlFor="message" id="message"></label>
             <textarea
+              rows="5"
               placeholder="Your message here.."
               name="message"
               // value={formData.message}
@@ -49,8 +48,12 @@ export default function Contact() {
             <button className="button" type="submit">
               Send
             </button>
-            {state.succeeded ? <p className="success">Message sent. Thanks for reaching out!</p> : null}
-            {state.errors.length ? <p className="error">Something went wrong...</p> : null}
+            {state.succeeded ? (
+              <p className="success">Message sent. Thanks for reaching out!</p>
+            ) : null}
+            {state.errors.length ? (
+              <p className="error">Something went wrong...</p>
+            ) : null}
           </form>
         </div>
       </main>
