@@ -15,7 +15,7 @@ export default function Contact() {
       <Nav />
       <main>
       <div className="contact">
-        <h2>Send me a message</h2>
+        <h2>Let's connect!</h2>
 
         <form onSubmit={(e) => handleSubmit(e)}>
           <label htmlFor="name">Name</label>
