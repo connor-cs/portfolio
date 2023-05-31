@@ -131,6 +131,11 @@ form > label {
   padding: 2px;
 }
 
+.error {
+  color: #A51B1B;
+  font-weight: bold;
+}
+
 .footer-icon {
   padding-top: 10px;
   text-decoration: none;
@@ -315,6 +320,11 @@ form >textarea:focus {
   padding: 20px;
   display: flex;
   justify-content: space-around;
+}
+
+.success {
+  color: #6AC165;
+  font-weight: bold;
 }
 
 .tech-container {
