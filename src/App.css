@@ -105,6 +105,7 @@ body {
 
 .contact>form>input {
   padding: 10px;
+  margin-bottom: 5px;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid hsla(0, 4%, 48%, 0.75);
@@ -118,11 +119,11 @@ body {
 form>label {
   padding: 8px;
   font-size: 1.2em;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 form>h2 {
-  padding: 20px;
+  padding: 20px 20px 15px 20px;
   margin: 0;
 
 }
@@ -135,6 +136,9 @@ form>h2 {
   display: flex;
   justify-content: center;
   padding: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
 }
 
 .error {
