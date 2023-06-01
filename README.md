@@ -12,6 +12,7 @@ EAE2B7
 /text area
 /contact corners not rounded
 /scroll to section
+j//s
 
 
 https://moonlit-kashata-b62df2.netlify.app/contact
