@@ -29,10 +29,16 @@ body {
 
 .button {
   cursor: pointer;
-  padding: 7px;
+  padding: 10px;
+  align-self: center;
+  color: hsla(0, 40%, 98%, 0.897);
   border: none;
-  border-radius: 10px;
-  background-color: #D62828;
+  min-width: 50%;
+  border-radius: 2px;
+  margin-top: 15px;
+  letter-spacing: 0.3em;
+  font-size: 1em;
+  background: linear-gradient(135deg, hsla(241, 51%, 26%, 1) 23%, hsla(281, 70%, 46%, 1) 96%);
 }
 
 .button:hover {
@@ -64,7 +70,6 @@ body {
   flex-direction: column;
   border: none;
   border-radius: 20px;
-  border: 2px solid yellow;
   width: 35%;
 }
 
@@ -85,7 +90,7 @@ body {
   border: 2px solid green
 }
 
-.contact-page > nav {
+.contact-page>nav {
   /* align-self: flex-start;
   justify-self: flex-start; */
 }
@@ -99,8 +104,8 @@ body {
 }
 
 .contact>form>input {
-  border-radius: 5px;
   padding: 10px;
+  margin-bottom: 5px;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid hsla(0, 4%, 48%, 0.75);
@@ -111,14 +116,16 @@ body {
   border-bottom: 2px solid #54b3d6;
 }
 
-form > label {
-  padding: 5px;
+form>label {
+  padding: 8px;
+  font-size: 1.2em;
+  margin-top: 8px;
 }
 
-.contact>h2 {
-  padding: 20px;
+form>h2 {
+  padding: 20px 20px 15px 20px;
   margin: 0;
-  
+
 }
 
 .footer {
@@ -129,6 +136,14 @@ form > label {
   display: flex;
   justify-content: center;
   padding: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+
+.error {
+  color: #A51B1B;
+  font-weight: bold;
 }
 
 .footer-icon {
@@ -137,20 +152,29 @@ form > label {
   color: #EAE2B7;
 }
 
-form > textarea {
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form>textarea {
+  margin-top: 5px;
   border: none;
   outline: none;
   overflow: auto;
   resize: vertical;
   font-family: 'Poppins', sans-serif;
   background-color: transparent;
+  border-bottom: 2px solid hsla(0, 4%, 48%, 0.75);
+
 }
 
-form >textarea:focus {
+form>textarea:focus {
   outline: none;
   border: none;
   overflow: auto;
   background-color: transparent;
+  border-bottom: 2px solid #54b3d6;
 }
 
 /* .modal {
@@ -185,7 +209,7 @@ form >textarea:focus {
 .icon {
   margin-left: 40px;
   padding-top: 6px;
-  color:  #54b3d6;
+  color: #54b3d6;
 }
 
 .intro {
@@ -315,6 +339,11 @@ form >textarea:focus {
   padding: 20px;
   display: flex;
   justify-content: space-around;
+}
+
+.success {
+  color: #6AC165;
+  font-weight: bold;
 }
 
 .tech-container {
