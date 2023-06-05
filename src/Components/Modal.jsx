@@ -30,7 +30,7 @@ export default function ResModal() {
           title="resume"
           width="90%"
           height="90%"
-          src=""
+          src= '/public/connor-cyphers.pdf'
         />
         
       </Modal>
