@@ -333,12 +333,14 @@ form>textarea:focus {
 }
 
 .skills {
-
-  border: 2px solid black;
   border-radius: 10px;
   padding: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.skill {
+  padding: 15px;
 }
 
 .success {

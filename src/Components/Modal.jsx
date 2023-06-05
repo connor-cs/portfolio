@@ -23,7 +23,7 @@ export default function ResModal() {
       <button className="modal-button" onClick={openModal}>
         modal button
       </button>
-      {/* <Modal isOpen={modal} onRequestClose={closeModal} style={customStyles}>
+      <Modal isOpen={modal} onRequestClose={closeModal} style={customStyles}>
         <button onClick={closeModal}>close</button>
         <iframe
           id="res"
@@ -33,8 +33,8 @@ export default function ResModal() {
           src=""
         />
         
-      </Modal> */}
-      <a href="/connor-cyphers.pdf">text</a>
+      </Modal>
+      {/* <a href="/connor-cyphers.pdf">text</a> */}
     </div>
   );
 }

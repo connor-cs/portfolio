@@ -27,11 +27,11 @@ export default function Home() {
       <section className="home-page-right">
         <h2>My Skills</h2>
         <div className="skills">
-          <FaReact size={56} />
-          <FaJs size={56} />
-          <DiRuby size={56} />
-          <SiRubyonrails size={60} />
-          <DiGit size={56} />
+          <FaReact size={56} className="skill"/>
+          <FaJs size={56} className="skill"/>
+          <DiRuby size={56} className="skill"/>
+          <SiRubyonrails size={60} className="skill"/>
+          <DiGit size={56} className="skill"/>
         </div>
 
         <h2>Currently learning</h2>
