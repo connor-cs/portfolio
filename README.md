@@ -19,3 +19,5 @@ https://moonlit-kashata-b62df2.netlify.app/contact
 
 //home page state to manage clicked
 //show
+
+background: linear-gradient(180deg, rgba(45,28,54,1) 8%, rgba(31,74,167,1) 81%);

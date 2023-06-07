@@ -304,6 +304,7 @@ form>textarea:focus {
 .res-button:hover {
 background-color: #1c1021;
 color: white;
+/* border: 2px solid rgba(35,36,103,255); */
 }
 
 
@@ -331,7 +332,9 @@ color: white;
   display: flex;
   color: #EAE2B7;
   flex-direction: column;
-  background-image: url('/public/project-bg.jpg');
+  padding: 1em;
+  /* background-image: url('/public/project-bg.jpg'); */
+  background: linear-gradient(180deg, rgba(45,28,54,1) 8%, rgba(63,100,180,1) 81%);
   background-size: cover;
 
 }
@@ -340,6 +343,7 @@ color: white;
   border: 2px solid grey;
   border-radius: 5px;
   color: #EAE2B7;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
