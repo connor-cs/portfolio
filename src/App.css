@@ -116,6 +116,12 @@ body {
   border-bottom: 2px solid #54b3d6;
 }
 
+.download {
+  background-color: hsla(0, 40%, 98%, 0.897);
+  text-decoration: none;
+  padding: 10px;
+}
+
 form>label {
   padding: 8px;
   font-size: 1.2em;
@@ -129,16 +135,13 @@ form>h2 {
 }
 
 .footer {
-  height: 74px;
+  
   border: none;
   margin-top: 10px;
   color: #EAE2B7;
   display: flex;
   justify-content: center;
   padding: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 45%;
 }
 
 .error {
@@ -184,6 +187,7 @@ form>textarea:focus {
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-size: contain;
   width: 100vw;
@@ -241,11 +245,6 @@ form>textarea:focus {
   margin: 0;
 }
 
-.learning {
-  border: solid black 2px;
-  border-radius: 10px;
-  /* margin-top: 20px; */
-}
 
 .link {
   text-decoration: none;
@@ -285,6 +284,7 @@ form>textarea:focus {
 
 .links-section {
   padding: 5px;
+  
 }
 
 
@@ -292,6 +292,40 @@ form>textarea:focus {
   background-size: contain;
 }
 
+.res-button {
+  border: none;
+  border-radius: 17px;
+  padding: 15px;
+  background-color:  hsla(0, 40%, 98%, 0.897);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.res-button:hover {
+background-color: #1c1021;
+color: white;
+}
+
+
+.popup-container {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.popup-button {
+  max-width: 10em;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  padding: 5px;
+  cursor: pointer;
+  color: hsla(0, 40%, 98%, 0.897);
+  font-weight: 600;
+}
 
 .projects {
   display: flex;
@@ -306,11 +340,17 @@ form>textarea:focus {
   border: 2px solid grey;
   border-radius: 5px;
   color: #EAE2B7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .proj-desc {
   text-decoration: none;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .proj>div>a {
@@ -330,6 +370,10 @@ form>textarea:focus {
   display: grid;
   gap: 10px 10px;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.resume-container {
+  margin-top: 3em;
 }
 
 .skills {

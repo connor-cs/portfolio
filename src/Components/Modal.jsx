@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import Modal from "react-modal";
-
+// import Modal from "react-modal";
+import Popup from "reactjs-popup";
+import { ImArrowRight } from "react-icons/im";
+import "reactjs-popup/dist/index.css";
 
 export default function ResModal() {
-  const [modal, setModal] = useState(false);
-
-  const openModal = () => setModal(true);
-  const closeModal = () => setModal(false);
+  const [open, setOpen] = useState(false);
 
   const customStyles = {
     top: "50%",
@@ -19,11 +18,37 @@ export default function ResModal() {
   };
 
   return (
-    <div>
-      <button className="modal-button" onClick={openModal}>
-        modal button
+    <div className="popup-container">
+      <button className="popup-button" onClick={() => setOpen(!open)}>
+        <ImArrowRight /> View
       </button>
-      <Modal isOpen={modal} onRequestClose={closeModal} style={customStyles}>
+      <Popup open={open}>
+        <object
+          data="/resume.pdf"
+          type="application/pdf"
+          width="100%"
+          heigh="100%"
+        ></object>
+      </Popup>
+      <a
+        className="popup-button"
+        href="/resume.pdf"
+        rel="noreferrer"
+        download="ConnorCyphersResume"
+      >
+        <ImArrowRight /> Download
+      </a>
+    </div>
+  );
+}
+
+{
+  /* <button className="modal-button" onClick={openModal}>
+        modal button
+      </button> */
+}
+{
+  /* <Modal isOpen={modal} onRequestClose={closeModal} style={customStyles}>
         <button onClick={closeModal}>close</button>
         <iframe
           id="res"
@@ -33,8 +58,8 @@ export default function ResModal() {
           src= '/public/connor-cyphers.pdf'
         />
         
-      </Modal>
-      {/* <a href="/connor-cyphers.pdf">text</a> */}
-    </div>
-  );
+      </Modal> */
+}
+{
+  /* <a href="/connor-cyphers.pdf">text</a> */
 }

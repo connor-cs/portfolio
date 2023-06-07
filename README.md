@@ -4,6 +4,7 @@ FCBF49
 D62828
 EAE2B7
 
+rgba(35,36,103,255)
 
 //get pictures of projects
 
@@ -15,3 +16,6 @@ EAE2B7
 
 
 https://moonlit-kashata-b62df2.netlify.app/contact
+
+//home page state to manage clicked
+//show
