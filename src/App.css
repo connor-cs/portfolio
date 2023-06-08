@@ -87,7 +87,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid green
+  /* border: 2px solid green */
 }
 
 .contact-page>nav {
@@ -351,7 +351,7 @@ color: white;
 
 .proj-desc {
   text-decoration: none;
-  list-style-type: none;
+  /* list-style-type: none; */
   display: flex;
   flex-direction: column;
   text-align: left;

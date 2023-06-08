@@ -1,9 +1,10 @@
 export const projectData = {
   notesAppData: {
-    title: "notes/to do app",
+    title: "Notes/to do app",
     desc: [
-      "lorem40test test test test test test test",
-      "test test test test test test st test test test test test test testst test test test test test test testst test test test test test test test",
+      "Create and filter notes by category or by search term",
+      "Uses local storage to save notes locally",
+      "Switch between dark and light modes",
     ],
     tech: ["React", "JavaScript", "CSS"],
     code: "https://github.com/connor-cs/notes-app",
@@ -15,11 +16,12 @@ export const projectData = {
     },
   },
   fullStackTravel: {
-    title: "Full stack travel map",
+    title: "Full-stack travel map",
     desc: [
+      "An app that lets a user place pins on a world map and leave comments and a review about that place",
+      "Users can see the pins left by other users when they log out",
       "React front end and Ruby on Rails backend",
       "Allows a user to register, and sign in and out of their account",
-      "A user can add a pin on the map with a title, description, and rating",
       "When a map marker is clicked, a popup will show the place details, the user who added it, and when it was created",
     ],
     tech: [
@@ -42,7 +44,10 @@ export const projectData = {
   travelAdvisor: {
     title: "Travel advisor app",
     desc: [
-      "st test test test test test test testst test test test test test test testst test test test test test test test",
+      "A travel companion app that displays useful information for travelers",
+      "Uses Google Maps API to display restaurant, hotel, and business data based on a user's location",
+      "Can filter results by type or by rating",
+      "Shows current weather data in a particular location",
     ],
     tech: ["GoogleMaps", "MaterialUI", "JavaScript", "React", "CSS"],
     code: "https://github.com/connor-cs/TravAd",
@@ -60,7 +65,9 @@ export const projectData = {
   movieHub: {
     title: "Movie Hub",
     desc: [
-      "st test test test test test test testst test test test test test test testst test test test test test test test",
+      "Search for and add your favorite TV shows and movies to a watchlist",
+      "Uses Firebase as a backend to authenticate users when they sign in/sign up and to store their saved movies",
+      "Clicking a movie or show will display further details and a button to watch the trailer",
     ],
     tech: ["Firebase", "Firestore", "React", "JavaScript", "MaterialUI", "CSS"],
     code: "https://github.com/connor-cs/movie-app",
@@ -73,7 +80,7 @@ export const projectData = {
     },
   },
   countries: {
-    title: "Countries Takehome Test",
+    title: "Countries takehome test",
     desc: [
       "Integrate with the REST Countries API to pull country data",
       "Display data according to the design schema provided",
@@ -89,8 +96,12 @@ export const projectData = {
     },
   },
   gitBranches: {
-    title: "Git Branches Takehome Test",
-    desc: ["kdlsks"],
+    title: "Git branches takehome test",
+    desc: [
+      "Created an app that allows a user to input the link to a Github repo",
+      "The branches of the repo are displayed in a kanban board",
+      "Each branch can be moved across the columns based on whether it is in progress or ready to be merged",
+    ],
     tech: ["React", "JavaScript"],
     code: "https://github.com/connor-cs/branches-takehome-test",
     demo: "",

@@ -7,15 +7,15 @@ import "reactjs-popup/dist/index.css";
 export default function ResModal() {
   const [open, setOpen] = useState(false);
 
-  const customStyles = {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
+  // const customStyles = {
+  //   top: "50%",
+  //   left: "50%",
+  //   right: "auto",
+  //   bottom: "auto",
+  //   marginRight: "-50%",
 
-    transform: "translate(-50%, -50%)",
-  };
+  //   transform: "translate(-50%, -50%)",
+  // };
 
   return (
     <div className="popup-container">
@@ -28,6 +28,7 @@ export default function ResModal() {
           type="application/pdf"
           width="100%"
           heigh="100%"
+          alt="resume"
         ></object>
       </Popup>
       <a
