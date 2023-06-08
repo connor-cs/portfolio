@@ -2,8 +2,9 @@ export const projectData = {
   notesAppData: {
     title: "Notes/to do app",
     desc: [
-      "",
-      "test test test test test test st test test test test test test testst test test test test test test testst test test test test test test test",
+      "Create and filter notes by category or by search term",
+      "Uses local storage to save notes locally",
+      "Switch between dark and light modes"
     ],
     tech: ["React", "JavaScript", "CSS"],
     code: "https://github.com/connor-cs/notes-app",
