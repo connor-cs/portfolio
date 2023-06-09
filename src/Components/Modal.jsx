@@ -27,7 +27,7 @@ export default function ResModal() {
           data="/resume.pdf"
           type="application/pdf"
           width="100%"
-          heigh="100%"
+          height="100%"
           alt="resume"
         ></object>
       </Popup>

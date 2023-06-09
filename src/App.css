@@ -317,6 +317,13 @@ color: white;
   margin: 1em;
 }
 
+.popup-content {
+  margin: 10%;
+  height: 100%;
+  width: 100%;
+  
+}
+
 .popup-button {
   max-width: 10em;
   background-color: transparent;
