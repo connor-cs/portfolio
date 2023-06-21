@@ -284,7 +284,10 @@ form>textarea:focus {
 
 .links-section {
   padding: 5px;
-  
+  display: flex;
+  border: 2px solid red;
+  justify-content: center
+
 }
 
 
@@ -408,4 +411,14 @@ color: white;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 5px;
+}
+
+.view-deploy-btn {
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }

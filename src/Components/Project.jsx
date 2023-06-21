@@ -4,13 +4,6 @@ import Chip from "./Chip";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BsGithub } from "react-icons/bs";
 
-//proj image1, 2, and 3
-//link if available
-//tech used
-//description
-//link to code
-//link to demo
-
 export default function Project({ props }) {
   console.log(props);
   return (
@@ -40,16 +33,13 @@ export default function Project({ props }) {
         </div>
       </div>
       <div className="links-section">
-        View the code:{" "}
         <BsGithub
           className="carousel-icon"
           size={25}
           onClick={() => window.open(`${props.code}`)}
         />
         {props.link ? (
-          <p>
-            View it <a href={props.link}>here</a>
-          </p>
+          <button className="view-deploy-btn" onClick={()=>window.open(`${props.link}`)}>View it here</button>
         ) : null}
         {props.demo ? (
           <p>
