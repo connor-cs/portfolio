@@ -20,7 +20,7 @@ export default function ResModal() {
           height="100%"
           alt="resume"
           alria-label="alt text"
-        ></object>
+        >alt</object>
       </Popup>
       <a
         className="popup-button"
