@@ -135,7 +135,7 @@ form>h2 {
 }
 
 .footer {
-  
+
   border: none;
   margin-top: 10px;
   color: #EAE2B7;
@@ -213,7 +213,7 @@ form>textarea:focus {
 .icon {
   margin-left: 40px;
   padding-top: 6px;
-  color: #54b3d6;
+  color: white
 }
 
 .intro {
@@ -285,9 +285,7 @@ form>textarea:focus {
 .links-section {
   padding: 5px;
   display: flex;
-  border: 2px solid red;
   justify-content: center
-
 }
 
 
@@ -299,24 +297,23 @@ form>textarea:focus {
   border: none;
   border-radius: 17px;
   padding: 15px;
-  background-color:  hsla(0, 40%, 98%, 0.897);
+  background-color: hsla(0, 40%, 98%, 0.897);
   cursor: pointer;
   font-weight: 500;
 }
 
 .res-button:hover {
-background-color: #1c1021;
-color: white;
-/* border: 2px solid rgba(35,36,103,255); */
+  background-color: #1c1021;
+  color: white;
+  /* border: 2px solid rgba(35,36,103,255); */
 }
 
 
 .popup-container {
-  border: 2px solid green;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin: 1em;
 }
 
@@ -324,19 +321,22 @@ color: white;
   margin: 10%;
   height: 100%;
   width: 100%;
-  
+
 }
 
 .popup-button {
-  max-width: 10em;
+  /* width: 10em; */
   background-color: transparent;
+  font-size: 1.5rem;
   border: none;
   text-decoration: none;
   padding: 5px;
   cursor: pointer;
   color: hsla(0, 40%, 98%, 0.897);
-  font-weight: 600;
+  font-weight: normal;
 }
+
+
 
 .projects {
   display: flex;
@@ -344,7 +344,7 @@ color: white;
   flex-direction: column;
   padding: 1em;
   /* background-image: url('/public/project-bg.jpg'); */
-  background: linear-gradient(180deg, rgba(45,28,54,1) 8%, rgba(63,100,180,1) 81%);
+  background: linear-gradient(180deg, rgba(45, 28, 54, 1) 8%, rgba(63, 100, 180, 1) 81%);
   background-size: cover;
 
 }
